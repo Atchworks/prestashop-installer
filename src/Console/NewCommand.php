@@ -93,7 +93,7 @@ class NewCommand extends Command
         if (!$isFolderEmpty) {
             $helper = $this->getHelper('question');
             $question = new ConfirmationQuestion(
-                'Directory '.$directory.' is not empty. Would you like to install anyway [y/n]?',
+                '<question>Directory '.$directory.' is not empty. Would you like to install anyway [y/n]?</question>',
                 false
             );
             if (!$helper->ask($input, $output, $question)) {
