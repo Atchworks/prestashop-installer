@@ -1,6 +1,6 @@
 <?php
 
-namespace Gskema\PrestaShop\Installer\Console;
+namespace Gskema\PrestaShop\Installer\Console\Command;
 
 use ZipArchive;
 use RuntimeException;
@@ -269,7 +269,7 @@ class NewCommand extends Command
      */
     protected function setFixture($fixture, $directory)
     {
-        $fixtureDir = __DIR__.'/fixtures/'.$fixture;
+        $fixtureDir = __DIR__ . '/fixtures/' .$fixture;
 
         if (is_dir($fixtureDir)) {
             $this->filesystem->mirror($fixtureDir, $directory, null, array('override' => true));

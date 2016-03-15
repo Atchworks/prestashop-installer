@@ -2,7 +2,7 @@
 
 namespace Gskema\Test;
 
-use Gskema\PrestaShop\Installer\Console\NewCommand;
+use Gskema\PrestaShop\Installer\Console\Command\NewCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 use PHPUnit_Framework_TestCase;
