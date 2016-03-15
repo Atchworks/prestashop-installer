@@ -61,7 +61,7 @@ class NewCommand extends Command
                 'release',
                 'r',
                 InputOption::VALUE_REQUIRED,
-                'Specify PrestaShop release version to download. E.g. 1.6.1.3'
+                'Specify PrestaShop release version to download. E.g. 1.6.1.4'
             )
             ->addOption(
                 'fixture',
