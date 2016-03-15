@@ -301,9 +301,7 @@ class NewCommand extends Command
      */
     protected function cleanUp($zipFile, $tmpDirectory)
     {
-        $this->filesystem->remove($zipFile);
-        $this->filesystem->remove($tmpDirectory);
-
+        $this->filesystem->remove([$zipFile, $tmpDirectory]);
         return $this;
     }
 }
